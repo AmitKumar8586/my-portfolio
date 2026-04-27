@@ -24,13 +24,13 @@ function Hero() {
   return (
     <section
       className="min-h-screen flex flex-col items-center justify-center bg-cover bg-center border-b border-gray-300 px-4 py-10"
-      style={{ backgroundImage: "url('/hero-bg.jpg')" }}
+
     >
       <div>
         <img
           className="w-56 h-56 object-cover rounded-full border-4 border-white shadow-lg mb-6"
-          src="/assets/Profile.jpg"
-          alt="Amit Kumar"
+          src="assets/profile.jpg"
+          alt="Amit"
         />
       </div>
       <div className="text-center max-w-3xl">
