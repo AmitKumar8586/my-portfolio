@@ -23,7 +23,7 @@ function Hero() {
 
   return (
     <section
-      className="min-h-screen flex flex-col items-center justify-center bg-cover bg-center border-b border-gray-300 px-4 py-10"
+      className="min-h-screen flex flex-col items-center justify-center bg-cover bg-center px-4 py-10"
 
     >
       <div>

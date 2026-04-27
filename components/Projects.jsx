@@ -1,6 +1,6 @@
 function Projects() {
   return (
-    <section className="border-t border-gray-300 py-12 px-4">
+    <section className="py-12 px-4">
       {/* Container */}
       <div className="max-w-6xl mx-auto">
         {/* Heading */}

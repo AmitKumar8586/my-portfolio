@@ -1,6 +1,6 @@
 function Skill() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center border-b border-gray-300 px-4 py-10">
+    <section className="min-h-screen flex flex-col items-center justify-center px-4 py-10">
       
       <h2 className="text-2xl md:text-3xl text-center mb-8 md:mb-10">
         Skills

@@ -1,6 +1,6 @@
 function Services() {
   return (
-    <section className="border-b border-gray-300 py-12 px-4">
+    <section className="py-12 px-4">
       {/* Container */}
       <div className="max-w-6xl mx-auto text-center">
         {/* Heading */}
