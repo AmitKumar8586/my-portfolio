@@ -1,3 +1,9 @@
+import Todoimg from "/assets/todoimg.jpg";
+import Weatherimg from "/assets/weatherimg.jpg";
+import Ecommerceimg from "/assets/ecommerceimg.jpg";
+
+
+
 function Projects() {
   return (
     <section className="py-12 px-4">
@@ -13,13 +19,13 @@ function Projects() {
           {/* Card */}
           <div className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
             <img
-              src="https://via.placeholder.com/400x200"
-              alt="Project 1"
+              src={Todoimg}
+              alt="Todo App"
               className="w-full h-40 sm:h-44 md:h-48 object-cover"
             />
             <div className="p-5">
               <h3 className="text-lg md:text-xl font-semibold mb-2">
-                Project One
+                Todo App
               </h3>
               <p className="text-gray-600 text-sm md:text-base mb-4">
                 A brief description of the project goes here. It highlights the
@@ -41,13 +47,13 @@ function Projects() {
           {/* Card */}
           <div className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
             <img
-              src="https://via.placeholder.com/400x200"
-              alt="Project 2"
+              src={Weatherimg}
+              alt="Weather App"
               className="w-full h-40 sm:h-44 md:h-48 object-cover"
             />
             <div className="p-5">
               <h3 className="text-lg md:text-xl font-semibold mb-2">
-                Project Two
+                Weather App
               </h3>
               <p className="text-gray-600 text-sm md:text-base mb-4">
                 A brief description of the project goes here.
@@ -67,13 +73,13 @@ function Projects() {
           {/* Card */}
           <div className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
             <img
-              src="https://via.placeholder.com/400x200"
-              alt="Project 3"
+              src={Ecommerceimg}
+              alt="E-commerce Site"
               className="w-full h-40 sm:h-44 md:h-48 object-cover"
             />
             <div className="p-5">
               <h3 className="text-lg md:text-xl font-semibold mb-2">
-                Project Three
+                E-commerce Site
               </h3>
               <p className="text-gray-600 text-sm md:text-base mb-4">
                 A brief description of the project goes here.
