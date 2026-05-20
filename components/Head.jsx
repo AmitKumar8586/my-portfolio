@@ -4,7 +4,7 @@ function Head() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="flex justify-between items-center border-b border-gray-300 px-4 py-3 font-mono">
+    <header className="flex justify-between items-center px-4 py-3 font-mono shadow-md relative z-10">
       {/* Logo */}
       <h1 className="text-xl sm:text-2xl md:text-3xl">
         #CodeWith<span className="text-blue-500">Amit</span>

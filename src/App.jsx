@@ -1,5 +1,4 @@
 import React from "react";
-import { Routes } from "react-router-dom";
 import Head from "/components/Head.jsx";
 import Hero from "/components/Hero.jsx";
 import Skill from "/components/Skill";

@@ -22,10 +22,7 @@ function Hero() {
   }, []);
 
   return (
-    <section
-      className="min-h-screen flex flex-col items-center justify-center bg-cover bg-center px-4 py-10"
-
-    >
+    <section className="min-h-screen flex flex-col items-center justify-center bg-cover bg-center px-4 py-10">
       <div>
         <img
           className="w-56 h-56 object-cover rounded-full border-4 border-white shadow-lg mb-6"

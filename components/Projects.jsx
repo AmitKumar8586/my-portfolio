@@ -2,8 +2,6 @@ import Todoimg from "/assets/todoimg.jpg";
 import Weatherimg from "/assets/weatherimg.jpg";
 import Ecommerceimg from "/assets/ecommerceimg.jpg";
 
-
-
 function Projects() {
   return (
     <section className="py-12 px-4">

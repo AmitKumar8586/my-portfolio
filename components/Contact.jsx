@@ -1,4 +1,34 @@
+import { useState } from "react";
+
 function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("http://localhost:5000/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      const data = await response.json();
+      console.log(data);
+      alert("Message sent successfully!");
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error("Error submitting form", error);
+    }
+  };
+
   return (
     <section className="min-h-screen px-4 py-10 flex flex-col items-center">
       {/* Heading */}
@@ -47,22 +77,34 @@ function Contact() {
 
         {/* Right Side (Form) */}
         <div className="flex justify-center items-center w-full md:w-1/2">
-          <form className="flex flex-col gap-4 w-full max-w-md p-4 sm:p-6 shadow rounded-lg bg-white">
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col gap-4 w-full max-w-md p-4 sm:p-6 shadow rounded-lg bg-white"
+          >
             <input
               className="border p-2 rounded"
               type="text"
               placeholder="Name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
             />
 
             <input
               className="border p-2 rounded"
               type="email"
               placeholder="Email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
             />
 
             <textarea
               className="border p-2 rounded"
               rows="5"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
               placeholder="Your message here..."
             ></textarea>
 
